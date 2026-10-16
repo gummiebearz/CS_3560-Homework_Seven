@@ -9,7 +9,7 @@ public class FatsFactory {
     private FatsFactory() {}
     public static FatsFactory getInstance() {
         if(fatsFactory == null) {
-            return new FatsFactory();
+            fatsFactory = new FatsFactory();
         }
 
         return fatsFactory;

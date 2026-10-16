@@ -9,7 +9,7 @@ public class ProteinFactory {
     private ProteinFactory() {}
     public static ProteinFactory getInstance() {
         if(proteinFactory == null) {
-            return new ProteinFactory();
+            proteinFactory = new ProteinFactory();
         }
 
         return proteinFactory;

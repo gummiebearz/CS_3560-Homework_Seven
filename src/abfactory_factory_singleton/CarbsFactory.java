@@ -9,7 +9,7 @@ public class CarbsFactory {
     private CarbsFactory() {}
     public static CarbsFactory getInstance() {
         if(carbsFactory == null) {
-            return new CarbsFactory();
+            carbsFactory = new CarbsFactory();
         }
 
         return carbsFactory;
