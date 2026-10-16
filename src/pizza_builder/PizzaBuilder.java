@@ -27,6 +27,11 @@ public class PizzaBuilder {
     }
 
     public Pizza createPizza() {
+        // Enforce size requirement
+        if(this.size == null) {
+            throw new IllegalArgumentException("Pizza size is required");
+        }
+
         return new Pizza(this.chain, this.size, this.toppings);
     }
 }

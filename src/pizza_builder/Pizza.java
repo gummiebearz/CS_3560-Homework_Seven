@@ -24,9 +24,17 @@ public class Pizza {
 
         System.out.print("Size: ");
         switch (this.size) {
-            case SIZE.SMALL ->  System.out.println("Small");
-            case SIZE.MEDIUM -> System.out.println("Medium");
-            case SIZE.LARGE -> System.out.println("Large");
+            case SIZE.SMALL:
+                System.out.println("Small");
+                break;
+            case SIZE.MEDIUM:
+                System.out.println("Medium");
+                break;
+            case SIZE.LARGE:
+                System.out.println("Large");
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid size");
         }
 
         System.out.println("Selected toppings: ");
