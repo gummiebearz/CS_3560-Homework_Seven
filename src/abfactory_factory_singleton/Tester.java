@@ -1,10 +1,8 @@
 package abfactory_factory_singleton;
 
-import java.util.ArrayList;
-
 public class Tester {
     public static void main(String[] args) {
-        // Depend on the abstract type, never care what Diet Plan is
+        // Depend on the abstract type; the food factories decide what each diet allows
         MacronutrientFactory factory = MealFactory.getInstance();
 
         Customer[] customers = {
