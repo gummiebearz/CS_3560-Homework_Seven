@@ -2,12 +2,6 @@ package pizza_builder;
 
 import java.util.ArrayList;
 
-enum SIZE {
-    MEDIUM,
-    SMALL,
-    LARGE
-}
-
 public class Pizza {
     private String chain;
     private SIZE size;
