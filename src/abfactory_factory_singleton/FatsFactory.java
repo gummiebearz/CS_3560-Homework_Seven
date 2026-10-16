@@ -16,7 +16,7 @@ public class FatsFactory {
     }
     // ---------------------------------
     // Factory pattern implementation
-    public static Fats getFats(DietPlan dietPlan) {
+    public Fats getFats(DietPlan dietPlan) {
         ArrayList<Fats> itemsInPlan = new ArrayList<>();
 
         switch (dietPlan) {

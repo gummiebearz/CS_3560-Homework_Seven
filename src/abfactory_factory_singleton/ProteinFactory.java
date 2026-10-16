@@ -16,7 +16,7 @@ public class ProteinFactory {
     }
     // ---------------------------------
     // Factory pattern implementation
-    public static Protein getProtein(DietPlan dietPlan) {
+    public Protein getProtein(DietPlan dietPlan) {
         ArrayList<Protein> itemsInPlan = new ArrayList<>();
 
         switch (dietPlan) {
