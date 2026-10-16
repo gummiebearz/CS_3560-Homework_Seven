@@ -26,9 +26,13 @@ public class FatsFactory {
                 itemsInPlan.add(new Tuna());
                 itemsInPlan.add(new Peanuts());
                 break;
-            case PALEO, VEGAN:
+            case PALEO:
                 itemsInPlan.add(new Avocado());
                 itemsInPlan.add(new Tuna());
+                itemsInPlan.add(new Peanuts());
+                break;
+            case VEGAN:
+                itemsInPlan.add(new Avocado());
                 itemsInPlan.add(new Peanuts());
                 break;
             case NUT_ALLERGY:
@@ -37,7 +41,7 @@ public class FatsFactory {
                 itemsInPlan.add(new Tuna());
                 break;
             default:
-                System.err.println("Unknown diet");
+                throw new IllegalArgumentException("Unknown diet plan");
         }
 
         // Generate a random index between 0 and list length - 1

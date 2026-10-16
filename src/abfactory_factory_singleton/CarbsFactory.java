@@ -40,7 +40,7 @@ public class CarbsFactory {
                 itemsInPlan.add(new Lentils());
                 break;
             default:
-                System.err.println("Unknown diet");
+                throw new IllegalArgumentException("Unknown diet plan");
         }
 
         // Generate a random index between 0 and list length - 1
