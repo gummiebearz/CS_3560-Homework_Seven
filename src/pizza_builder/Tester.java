@@ -34,7 +34,7 @@ public class Tester {
 
         // Adding Dominos chains
         pizzas.add(new PizzaBuilder().setChain("Dominos").setSize(SIZE.SMALL).addTopping("Pepperoni").createPizza());
-        pizzas.add(new PizzaBuilder().setChain("Pizza Hut").setSize(SIZE.LARGE).addTopping("Pepperoni").addTopping("Peppers").addTopping("Ham").createPizza());
+        pizzas.add(new PizzaBuilder().setChain("Dominos").setSize(SIZE.LARGE).addTopping("Pepperoni").addTopping("Peppers").addTopping("Ham").createPizza());
 
         // Eat all the pizzas
         for(Pizza pizza : pizzas) {
