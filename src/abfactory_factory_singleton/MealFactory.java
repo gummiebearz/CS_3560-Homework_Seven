@@ -19,7 +19,7 @@ public class MealFactory extends MacronutrientFactory {
     @Override
     public CarbsFactory getCarbsFactory() {
         return CarbsFactory.getInstance();
-    };
+    }
 
     @Override
     public ProteinFactory getProteinFactory() {
